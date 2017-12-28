@@ -1,0 +1,21 @@
+.search-result-list {
+  margin:0 auto;
+  position:absolute;
+  overflow: auto;
+  top: 62px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+.search-result-list__song {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.search-result-list__song-artist {
+  color: #888;
+}
+
+.search-result-list__song-name {
+  font-size: 18px;
+}
