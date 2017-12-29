@@ -8,7 +8,6 @@ import App from './components/app';
 import { createStore, applyMiddleware } from 'redux';
 import todoAppReducers from './reducers/reducers';
 import todoMiddlewares from './middlewares/middlewares';
-import registerServiceWorker from './registerServiceWorker';
 
 const initialState = {
   list: []
@@ -22,4 +21,3 @@ ReactDOM.render(
   </Provider>, 
   document.getElementById('root')
 );
-registerServiceWorker();
