@@ -37,6 +37,10 @@ npm run test
 ```
 And run the option a to run all test
 
+## Demo
+
+You can also run the application with https://tanjonarako.github.io/react-itunes/build/index.html
+
 ## Built With
 
 * [React](http://reactjs.org/) - The web framework used
