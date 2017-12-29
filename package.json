@@ -21,7 +21,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
-  "homepage": "https://github.com/tanjonarako/react-itunes"
+  "homepage": "https://github.com/tanjonarako/react-itunes",
+  "gh-pages-deploy": {
+    "staticpath": "build",
+    "cname": "nope.org",
+    "prep": [
+      "build-sass",
+      "optimize-img"
+    ],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
+  }
 }
